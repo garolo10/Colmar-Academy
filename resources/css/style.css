@@ -49,33 +49,111 @@ main {
     top: 64px;
 }
 
+/* --- LEARN SOMETHING NEW EVERYDAY --- */
+
 .learn {
     background-color: lightgrey;
     display: flex;
     align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
 }
 
-.learn div {
-    display: flex;
-    flex-flow: row wrap;
-}
 .learn img {
     width: 60%;
-    padding: 32px 24px;
+    margin: 32px 24px;
 }
 
-.learn .title {
-    font-size: 4vw;
+.learn_right {
+    display: flex;
+    flex-flow: column wrap;
+    width: 33%;
+}
+
+.title {
+    font-size: 3.5vw;
+    line-height: 4vw;
     font-weight: 900;
-    color: grey;
-    padding-bottom: 1rem;
-    flex: 2 1 5rem;
+    color: #606060 !important;
+    margin-bottom: 32px;
 }
 
-.learn p {
-    font-size: 2vw;
+.subtitle {
+    font-size: 1.75vw;
+    line-height: 2.5vw;
     font-weight: 600;
     color: darkslategray;
-    padding-bottom: 1rem;
+    margin-bottom: 24px;
 }
+
+.comenzar {
+    width: 85%;
+    border: 1px solid #404040;
+    background-color: #606060;
+    padding: 8px 0;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+/* --- IT DOESN'T HURT TO KEEP PRACTICING --- */
+
+.hurt {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.hurt_left {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+}
+
+.hurt_left img {
+    width: 100%;
+    margin: 32px 24px;
+}
+
+.hurt_left p {
+    color: grey;
+}
+
+.hurt_right {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+}
+
+.recuadro {
+    display: flex;
+    flex-direction: row nowrap;
+    border: 1px solid black;
+}
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+.hurt_right img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+
+
+.info_title {
+    color: #404040;
+    font-weight: bold;
+}
+
 /* --- FOOTER --- */
