@@ -108,11 +108,11 @@ main {
 .hurt_left {
     display: flex;
     flex-flow: column nowrap;
-    width: 60%;
+    width: 64%;
 }
 
 .hurt_left img {
-    width: 100%;
+    width: 93.75%;
     margin: 32px 24px;
 }
 
@@ -123,7 +123,7 @@ main {
 .hurt_right {
     display: flex;
     flex-flow: column nowrap;
-    width: 40%;
+    width: 36%;
 }
 
 .recuadro {
@@ -137,11 +137,6 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
 }
-
-
-
-
-
 
 .hurt_right img {
     width: 35%;
