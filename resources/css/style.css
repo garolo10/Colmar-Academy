@@ -49,6 +49,10 @@ main {
     top: 64px;
 }
 
+section {
+    border: 0.5px solid lightgrey;
+}
+
 /* --- LEARN SOMETHING NEW EVERYDAY --- */
 
 .learn {
@@ -108,34 +112,56 @@ main {
 .hurt_left {
     display: flex;
     flex-flow: column nowrap;
-    width: 64%;
+    max-width: 60%;
+    padding: 32px 24px;
 }
 
 .hurt_left img {
-    width: 93.75%;
-    margin: 32px 24px;
+    width: 100%;
+    margin-bottom: 32px;
 }
 
-.hurt_left p {
-    color: grey;
+.hurt_left_title {
+    font-size: 3.4vw;
+    font-weight: 900;
+    color: #606060 !important;
+    margin-bottom: 24px;
+}
+
+.hurt_left_text {
+    color: #606060;
+    width: 95%;
+    font-size: 1.1vw;
+    margin-bottom: 24px;
+}
+
+.hurt_left_name {
+    color: #404040;
+    font-size: 1.1vw;
 }
 
 .hurt_right {
     display: flex;
     flex-flow: column nowrap;
     width: 36%;
+    justify-content: center;
 }
 
-.recuadro {
+.recuadro, .recuadro_campus {
     display: flex;
     flex-direction: row nowrap;
-    border: 1px solid black;
+    border: 0.05px solid #E0E0E0;
+}
+
+.recuadro_campus {
+    background-color: #E0E0E0;
 }
 
 .info {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
+    max-width: 65%;
 }
 
 .hurt_right img {
@@ -144,11 +170,29 @@ main {
     margin: 16px;
 }
 
-
-
 .info_title {
     color: #404040;
     font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.info_date {
+    color: #606060;
+    font-size: 1.1vw;
+    margin-bottom: 8px;
+
+}
+
+.info_readmore {
+    font-size: 1vw;
+    font-display: normal;
+    text-decoration: none;
 }
 
 /* --- FOOTER --- */
+
+footer {
+    visibility: hidden;
+}
