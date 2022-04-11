@@ -191,6 +191,33 @@ section {
     text-decoration: none;
 }
 
+.start {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: lightgray;
+}
+
+.start_title {
+    font-size: 3.4vw;
+    font-weight: 900;
+    color: #606060 !important;
+    margin: 32px auto;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 72px 32px 72px;
+    justify-content: space-evenly;
+}
+
+.cuadrito {
+    width: 330.67px;
+}
+
+.cuadrito img {
+    width: 100%;
+}
 /* --- FOOTER --- */
 
 footer {
