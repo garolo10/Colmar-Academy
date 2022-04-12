@@ -99,6 +99,7 @@ section {
     color: white;
     font-weight: 400;
     font-size: 1.5vw;
+    box-shadow: 1px 1px 6px 0.5px rgba(0,0,0,0.2);
 }
 
 /* --- IT DOESN'T HURT TO KEEP PRACTICING --- */
@@ -121,14 +122,14 @@ section {
     margin-bottom: 32px;
 }
 
-.hurt_left_title {
+.hurt_left_title, .thesis_grid_left_title {
     font-size: 3.4vw;
     font-weight: 900;
     color: #606060 !important;
     margin-bottom: 24px;
 }
 
-.hurt_left_text {
+.hurt_left_text, .thesis_grid_left_text  {
     color: #606060;
     width: 95%;
     font-size: 1.1vw;
@@ -219,7 +220,7 @@ section {
     background-color: white;
     margin-bottom: 32px;
     border: 0.5px solid #808080;
-    box-shadow: 0px 0px 15px 0.5px #808080;
+    box-shadow: 1px 1px 15px 0.5px rgba(0,0,0,0.2);
 }
 
 .cuadrito img {
@@ -253,11 +254,75 @@ section {
 
 /* --- THESIS EXHIBIT --- */
 
+.thesis {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.thesis_title {
+    font-size: 3.4vw;
+    font-weight: 900;
+    color: #606060 !important;
+    margin: 32px auto;
+}
+
+.thesis_grid {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.thesis_grid_left {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+    padding: 0 24px;
+}
+
+.thesis_grid_left video {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.thesis_grid_right {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 40%;
+    justify-content: flex-start;
+}
+
+.recuadro {
+    display: flex;
+    flex-direction: row nowrap;
+    border: 0.05px solid #E0E0E0;
+}
+
+.recuadro_campus {
+    background-color: #E0E0E0;
+}
+
+.info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 65%;
+    line-height: 1.25rem;
+}
+
+.thesis_grid_right img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+
+
 
 
 
 /* --- FOOTER --- */
 
 footer {
-    visibility: hidden;
+    position: relative;
+    top: 64px;
 }
