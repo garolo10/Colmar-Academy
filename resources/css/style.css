@@ -1,6 +1,5 @@
 body {
     width: 100%;
-    font-size: 1.25rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -13,6 +12,7 @@ header {
     height: 64px;
     z-index: 1;
     background-color: white;
+    font-size: 1.25rem;
 }
 
 .titulo {
@@ -133,6 +133,7 @@ section {
     width: 95%;
     font-size: 1.1vw;
     margin-bottom: 24px;
+    line-height: 1.25rem;
 }
 
 .hurt_left_name {
@@ -162,6 +163,7 @@ section {
     flex-flow: column wrap;
     justify-content: center;
     max-width: 65%;
+    line-height: 1.25rem;
 }
 
 .hurt_right img {
@@ -182,7 +184,6 @@ section {
     color: #606060;
     font-size: 1.1vw;
     margin-bottom: 8px;
-
 }
 
 .info_readmore {
@@ -190,6 +191,8 @@ section {
     font-display: normal;
     text-decoration: none;
 }
+
+/* --- START LEARNING --- */
 
 .start {
     display: flex;
@@ -207,17 +210,52 @@ section {
 .grid {
     display: flex;
     flex-flow: row wrap;
-    margin: 0 72px 32px 72px;
+    margin: 0 72px;
     justify-content: space-evenly;
 }
 
 .cuadrito {
     width: 330.67px;
+    background-color: white;
+    margin-bottom: 32px;
+    border: 0.5px solid #808080;
+    box-shadow: 0px 0px 15px 0.5px #808080;
 }
 
 .cuadrito img {
     width: 100%;
 }
+
+.cuadrito_title {
+    color: #404040;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin: 16px;
+    letter-spacing: 0.5px;
+}
+
+.cuadrito_courses {
+    text-transform: uppercase;
+    color: #808080;
+    font-size: 1.1vw;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+.cuadrito_def {
+    color: #808080;
+    font-size: 1.1vw;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    width: 80%;
+    line-height: 1.25rem;
+}
+
+/* --- THESIS EXHIBIT --- */
+
+
+
+
 /* --- FOOTER --- */
 
 footer {
