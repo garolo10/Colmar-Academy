@@ -12,7 +12,6 @@ header {
     height: 64px;
     z-index: 1;
     background-color: white;
-    font-size: 1.67vw;
 }
 
 .titulo {
@@ -28,7 +27,7 @@ header {
     height: 32px;
 }
 
-.titulo nav p {
+.titulo nav a {
     padding-left: 16px;
 }
 
@@ -77,7 +76,7 @@ section {
 .learn_right {
     display: flex;
     flex-flow: column wrap;
-    width: 33%;
+    width: 100%;
 }
 
 .title {
@@ -340,6 +339,19 @@ section {
 footer {
     position: relative;
     top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div, footer nav {
+    margin: 16px 24px;
+}
+
+footer nav a{
+    display: inline-block;
+    font-display: normal;
+    text-decoration: none;
+    padding-right: 16px;
 }
 
 @media only screen and (min-width: 601px) {
@@ -352,14 +364,20 @@ footer {
     .titulo nav p, .logo p {
         display: none;
     }
+
     .learn {
         justify-content: center;
         flex-flow: row wrap;
     }
+    
     .learn img {
         width: 100%;
-        margin: 0;
-    }   
+        margin: 0 0 32px;
+    }
+    
+    footer nav {
+        display: none;
+    }
 }
 
 /* 1920*1080 */
