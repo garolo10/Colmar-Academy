@@ -12,7 +12,7 @@ header {
     height: 64px;
     z-index: 1;
     background-color: white;
-    font-size: 1.25rem;
+    font-size: 1.67vw;
 }
 
 .titulo {
@@ -41,6 +41,12 @@ header p {
     color: grey;
 }
 
+.titulo a {
+    font-display: normal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
 
 /* --- MAIN --- */
 
@@ -100,7 +106,14 @@ section {
     font-weight: 400;
     font-size: 1.5vw;
     box-shadow: 1px 1px 6px 0.5px rgba(0,0,0,0.2);
+    transition: background-color 1s, box-shadow 1s;
 }
+
+.comenzar:hover {
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 1px 1px 6px 0.5px rgba(0,0,0,0.8);
+}
+
 
 /* --- IT DOESN'T HURT TO KEEP PRACTICING --- */
 
@@ -149,14 +162,16 @@ section {
     justify-content: center;
 }
 
-.recuadro, .recuadro_campus {
+.recuadro {
     display: flex;
     flex-direction: row nowrap;
     border: 0.05px solid #E0E0E0;
+    transition: background-color 0.5s;
 }
 
-.recuadro_campus {
+.recuadro:hover {
     background-color: #E0E0E0;
+    box-shadow: 1px 1px 6px 0.5px rgba(0,0,0,0.2);
 }
 
 .info {
@@ -221,6 +236,11 @@ section {
     margin-bottom: 32px;
     border: 0.5px solid #808080;
     box-shadow: 1px 1px 15px 0.5px rgba(0,0,0,0.2);
+    transition: box-shadow 0.5s;
+}
+
+.cuadrito:hover {
+    box-shadow: 1px 1px 15px 0.5px rgba(0,0,0,0.8);
 }
 
 .cuadrito img {
@@ -315,14 +335,31 @@ section {
     margin: 16px;
 }
 
-
-
-
-
-
 /* --- FOOTER --- */
 
 footer {
     position: relative;
     top: 64px;
 }
+
+@media only screen and (min-width: 601px) {
+    .titulo nav img {
+        display: none;
+    }   
+}
+
+@media only screen and (max-width: 600px) {
+    .titulo nav p, .logo p {
+        display: none;
+    }
+    .learn {
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .learn img {
+        width: 100%;
+        margin: 0;
+    }   
+}
+
+/* 1920*1080 */
