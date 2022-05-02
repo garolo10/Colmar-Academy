@@ -165,7 +165,7 @@ section {
     display: flex;
     flex-direction: row nowrap;
     border: 0.05px solid #E0E0E0;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, box-shadow 0.5s;
 }
 
 .recuadro:hover {
