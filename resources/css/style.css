@@ -111,6 +111,7 @@ section {
 .comenzar:hover {
     background-color: rgba(0,0,0,0.8);
     box-shadow: 1px 1px 6px 0.5px rgba(0,0,0,0.8);
+    cursor: pointer;
 }
 
 
